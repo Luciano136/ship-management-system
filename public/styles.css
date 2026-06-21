@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0b0f14;
+    color: #e8eef7;
+}
+
+/* NAV */
+nav {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background: #111827;
+    border-bottom: 1px solid #1f2a3a;
+}
+
+nav button {
+    background: #1f2a3a;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+nav button:hover {
+    background: #2b3b52;
+}
+
+/* TABS */
+.tab {
+    display: none;
+    padding: 20px;
+}
+
+.tab.active {
+    display: block;
+}
+
+/* CARDS */
+input, select {
+    padding: 8px;
+    margin: 5px;
+    background: #0f1620;
+    border: 1px solid #2b3a50;
+    color: white;
+    border-radius: 6px;
+}
+
+button {
+    padding: 8px 12px;
+    background: #2563eb;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #3b82f6;
+}
+
+.card {
+    background: #151b26;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #1f2a3a;
+}
+
+nav button.active {
+    background: #2563eb;
+    box-shadow: 0 0 10px rgba(37, 99, 235, 0.5);
+}
