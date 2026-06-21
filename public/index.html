@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Ships System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <button id="btn-ports" onclick="showTab('ports')">Ports</button>
+    <button id="btn-ships" onclick="showTab('ships')">Ships</button>
+    <button id="btn-history" onclick="showTab('history')">History</button>
+</nav>
+
+<!-- PORTS -->
+<section id="ports" class="tab active">
+    <h2>⚓ Ports</h2>
+
+    <input id="portName" placeholder="Port name">
+    <button onclick="createPort()">Create Port</button>
+
+    <div id="portsList"></div>
+</section>
+
+<!-- SHIPS -->
+<section id="ships" class="tab">
+    <h2>🚢 Ships</h2>
+
+    <input id="shipName" placeholder="Ship name">
+    <input id="shipMaxWeight" placeholder="Max weight">
+    <select id="portSelect"></select>
+
+    <button onclick="createShip()">Create Ship</button>
+
+    <hr>
+
+    <h3>Cargo</h3>
+
+    <select id="shipSelect"></select>
+    <input id="cargoName" placeholder="Cargo name">
+    <input id="cargoWeight" placeholder="Weight">
+    <button onclick="addCargo()">Add Cargo</button>
+
+    <div id="shipsList"></div>
+</section>
+
+<!-- HISTORY -->
+<section id="history" class="tab">
+    <h2>📜 Movement History</h2>
+    <div id="historyList"></div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
